@@ -14,7 +14,7 @@
                     <a href="${pageContext.request.contextPath}/show?id=${task.id}">
                         <c:out value="${task.id}" />
                     </a>
-                    ：<c:out value="${message.content}" />
+                    ：<c:out value="${task.content}" />
                 </li>
             </c:forEach>
         </ul>
@@ -31,7 +31,7 @@
                 </c:choose>
             </c:forEach>
         </div>
-        <p><a href="${pageContext.request.contextPath}/new">タスクの内容</a></p>
+        <p><a href="${pageContext.request.contextPath}/new">タスクの新規作成</a></p>
 
     </c:param>
 </c:import>
